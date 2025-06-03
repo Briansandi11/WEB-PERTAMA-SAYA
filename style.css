@@ -1,0 +1,206 @@
+*, html body{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: rgb(21, 37, 98);
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 20px;   
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.logo1{
+    width: 35px;
+    height: 35px;  
+    margin-left: 10px 
+}
+
+.logo2{
+    margin-right: auto;
+    display: flex;
+}
+.logo{
+    color:#eaeaea;
+    cursor: pointer;
+    transition: all .5s ease 0s;
+}
+
+.logo:hover{
+    color: orange;
+    transform: rotate(2deg);
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 15px;
+    cursor: pointer;
+}
+
+a{
+   text-decoration: none; 
+   color: whitesmoke;
+   display: inline-block;
+} 
+a:hover{
+    transform: rotate(2deg);
+    color: orange;
+    transition: all .5s ease 0s;
+}
+
+.button{
+    margin-right:10px;
+    padding: 7px 12px;
+    border: none;
+    background-color: rgb(99, 77, 34);
+    border-radius: 8px;
+    color: #eaeaea;
+    cursor: pointer;
+}
+
+.container{ 
+    max-width: 1200;
+    margin: 0 auto;
+    padding: 6px;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.satu{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.dua{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.foto{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    max-width: 500px;
+}
+
+.parallax{
+    background-image: url('sdd.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.tentang{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: rgb(22, 37, 98);
+    color: aliceblue;
+    padding: 20px;
+    gap: 7px;
+}
+
+.butt{
+    margin-right:10px;
+    padding: 7px 12px;
+    border: none;
+    background-color: rgb(99, 77, 34);
+    border-radius: 8px;
+    color: #eaeaea;
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+.judul{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 25px;
+    flex-wrap: wrap;  
+    margin-top: 15px;
+}
+
+.hobi{
+    background: rgb(118, 111, 111);
+    color: whitesmoke;
+    width: 25%;
+    box-shadow: 2px 5px 8px 2px rgba(0,0,0,0.5);
+    text-align: center;
+    min-height: 145px;
+    max-height: 200px;
+}
+
+.hobi-satu{
+    font-weight: bolder;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.hobi-dua{
+    font-size: 12px;
+    margin-bottom: 5px
+}
+
+.icon{
+    height: 70px;
+    width: 70px;
+    margin-top: 8px;
+}
+.brian{
+    text-align: center;
+    background: rgb(22, 37, 98);
+    color: whitesmoke;
+    padding: 5px;
+}
+
+@media screen and (max-width: 500px){
+    .judul{
+        flex-direction: column;
+    }
+
+    .hobi{
+        width: 100%;
+        opacity: .8;
+    }
+
+    .foto{
+       padding: 0;
+    }
+
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+
+    .intro{
+        margin-top: 10px;
+    }
+
+    nav{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: rgb(22, 37, 98);
+        z-index: 9;
+    }
+    footer{
+        margin-bottom: 15px
+    }
+}
